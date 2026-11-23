@@ -68,7 +68,7 @@ From inside OpenWrt, use LuCI → System → Backup / Flash Firmware and upload 
 
 sysupgrade writes the same image to both stock slots. The stock U-Boot may switch between them after warm reboots; both hold the same OpenWrt.
 
-## Switching to official OpenWrt
+## Switching to official OpenWrt (once the device becomes supported)
 
 These images use the same device name (`iptime,be5100p`) and flash layout as the official support in #26729. After it is merged:
 
