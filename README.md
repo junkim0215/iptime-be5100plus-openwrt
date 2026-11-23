@@ -46,7 +46,7 @@ Get the files from [Releases](../../releases).
 
 ## Installing
 
-The stock web UI rejects OpenWrt images. Use the recovery page of the stock U-Boot instead; it works from the stock firmware and from OpenWrt.
+Install through the recovery page of the stock U-Boot. It works from the stock firmware and from OpenWrt. Installing from the stock web UI is not supported.
 
 1. Download the `*-squashfs-factory.bin` and `*-squashfs-sysupgrade.bin` files.
 2. Press and hold the reset button, then power up the router.
@@ -99,7 +99,7 @@ The recovery page does not remove `rootfs_data`, which OpenWrt grows to fill the
 
 - **Official kernel modules cannot be installed.** The image is not built by OpenWrt, so `apk add kmod-…` from the official feeds does not work (the kernel does not match). User-space packages from the official feeds can be installed. Kernel features that are not in the image need a newer release here, or the official images once #26729 is merged.
 - The power LED is always on, whatever its brightness setting; it seems to be wired straight to the power supply on the board.
-- The stock web UI cannot install OpenWrt; use the U-Boot recovery page.
+- Installing from the stock web UI is not supported; use the U-Boot recovery page.
 - The stock reset-button recovery page has been tested for installing OpenWrt and going back to stock only.
 
 ## Source and building
