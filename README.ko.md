@@ -54,10 +54,12 @@ ipTIME BE5100plus(MediaTek MT7987A, 512 MiB RAM, 128 MiB SPI-NAND, MT7992 Wi-Fi 
 4. PC를 LAN 포트에 연결하고 주소를 `192.168.0.100/24`로 설정합니다.
 5. `http://192.168.0.1`을 열고 `*-squashfs-factory.bin`을 올린 뒤, 업그레이드 완료가 표시될 때까지 기다립니다.
 6. 공유기가 OpenWrt initramfs(`192.168.1.1`)로 재부팅됩니다.
-7. `*-squashfs-sysupgrade.bin`을 `/tmp`에 복사하고 실행합니다.
-   ```
-   sysupgrade -n /tmp/*squashfs-sysupgrade.bin
-   ```
+7. `*-squashfs-sysupgrade.bin`을 설치합니다. 다음 둘 중 하나로 합니다.
+   - LuCI: `http://192.168.1.1`(사용자 `root`, 비밀번호 없음) → 시스템 → 백업/펌웨어 업그레이드 → 이미지 플래시에서 파일을 고르고 진행합니다.
+   - SSH: 파일을 `/tmp`에 복사하고 실행합니다.
+     ```
+     sysupgrade -n /tmp/*squashfs-sysupgrade.bin
+     ```
 8. `http://192.168.1.1`의 LuCI에 로그인(사용자 `root`, 비밀번호 없음)해 root 비밀번호를 설정합니다.
 
 ## 업그레이드

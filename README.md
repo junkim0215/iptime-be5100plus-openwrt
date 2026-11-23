@@ -54,10 +54,12 @@ The stock web UI rejects OpenWrt images. Use the recovery page of the stock U-Bo
 4. Connect the PC to a LAN port and set its address to `192.168.0.100/24`.
 5. Open `http://192.168.0.1`, upload the `*-squashfs-factory.bin` file and wait until the page shows that the upgrade is complete.
 6. The router reboots into an OpenWrt initramfs at `192.168.1.1`.
-7. Copy the `*-squashfs-sysupgrade.bin` file to `/tmp` and run:
-   ```
-   sysupgrade -n /tmp/*squashfs-sysupgrade.bin
-   ```
+7. Install the `*-squashfs-sysupgrade.bin` file in either way:
+   - LuCI: open `http://192.168.1.1` (user `root`, no password), go to System → Backup / Flash Firmware → Flash image, choose the file and continue, or
+   - SSH: copy the file to `/tmp` and run:
+     ```
+     sysupgrade -n /tmp/*squashfs-sysupgrade.bin
+     ```
 8. Log in to LuCI at `http://192.168.1.1` (user `root`, no password) and set a root password.
 
 ## Upgrading
