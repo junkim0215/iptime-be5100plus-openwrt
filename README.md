@@ -19,10 +19,10 @@ Support for this router has been submitted to OpenWrt ([openwrt/openwrt#26729](h
 | Wi-Fi access point, 2.4 GHz (2x2) and 5 GHz (3x3) | Working |
 | WireGuard | Working |
 | CPU LED, reset button, failsafe | Working |
-| WPS button | Not tested yet |
+| WPS button | Working |
 | LuCI in Korean (chosen automatically from the browser language) | Working |
 | Wi-Fi throughput, 160 MHz | Not tested yet |
-| USB 3.0 storage (ext4, exFAT, vfat, NTFS) | Not tested yet |
+| USB 3.0 storage (ext4, exFAT, vfat, NTFS) | Detected; storage mount not tested yet |
 | Wi-Fi offload (WED) | Off by default (OpenWrt default), not tested |
 | Long-term stability | Not tested yet |
 

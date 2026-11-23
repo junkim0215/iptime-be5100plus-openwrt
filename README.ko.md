@@ -19,10 +19,10 @@ ipTIME BE5100plus(MediaTek MT7987A, 512 MiB RAM, 128 MiB SPI-NAND, MT7992 Wi-Fi 
 | Wi-Fi AP, 2.4 GHz(2x2)·5 GHz(3x3) | 동작 |
 | WireGuard | 동작 |
 | CPU LED, 리셋 버튼, failsafe | 동작 |
-| WPS 버튼 | 미확인 |
+| WPS 버튼 | 동작 |
 | LuCI 한국어(브라우저 언어에 따라 자동) | 동작 |
 | Wi-Fi 처리량, 160 MHz | 미확인 |
-| USB 3.0 저장장치(ext4, exFAT, vfat, NTFS) | 미확인 |
+| USB 3.0 저장장치(ext4, exFAT, vfat, NTFS) | 인식 확인, 저장장치 마운트는 미확인 |
 | Wi-Fi 오프로드(WED) | 기본 꺼짐(OpenWrt 기본값), 미시험 |
 | 장시간 안정성 | 미확인 |
 
