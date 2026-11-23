@@ -2,9 +2,6 @@
 
 [English](README.md) | **한국어**
 
-> [!TIP]
-> **OpenWrt를 쓰려고 공유기를 새로 고르는 중이라면** OpenWrt가 공식 지원하는 기기를 고르세요. 예를 들어 MediaTek Filogic 기반 ipTIME 모델(AX3000 계열 등)이 있습니다. 이 미리보기는 BE5100plus를 이미 가진 분들을 위한 것입니다.
-
 ipTIME BE5100plus(MediaTek MT7987A, 512 MiB RAM, 128 MiB SPI-NAND, MT7992 Wi-Fi 7(2.4 GHz 2x2, 5 GHz 3x3), 1G LAN 4개, 2.5G WAN, USB 3.0)용 OpenWrt 미리보기 빌드입니다.
 
 이 공유기 지원은 OpenWrt에 제출되어 있지만([openwrt/openwrt#26729](https://github.com/openwrt/openwrt/pull/26729)) 아직 머지되지 않았습니다. 이 이미지는 그 PR의 기기 지원을 바꾸지 않고 그대로 빌드하고, 필요한 이미지 도구 수정([openwrt/firmware-utils#91](https://github.com/openwrt/firmware-utils/pull/91))만 더한 것입니다. PR이 머지되면 공식 OpenWrt 이미지로 갈아타세요(아래 참고). 이 저장소는 그때까지만 쓰는 용도입니다.
