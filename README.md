@@ -2,9 +2,6 @@
 
 **English** | [한국어](README.ko.md)
 
-> [!TIP]
-> **Choosing a router for OpenWrt?** Pick one with official OpenWrt support instead, for example an ipTIME model on MediaTek Filogic (such as the AX3000 series). This preview is for people who already own a BE5100plus.
-
 Preview builds of OpenWrt for the ipTIME BE5100plus (MediaTek MT7987A, 512 MiB RAM, 128 MiB SPI-NAND, MT7992 Wi-Fi 7 with 2.4 GHz 2x2 and 5 GHz 3x3, 4× 1G LAN, 2.5G WAN, USB 3.0).
 
 Support for this router has been submitted to OpenWrt ([openwrt/openwrt#26729](https://github.com/openwrt/openwrt/pull/26729)) but is not merged yet. These images are built from that pull request without changes to the device support, plus the image tool change it needs ([openwrt/firmware-utils#91](https://github.com/openwrt/firmware-utils/pull/91)). Once the pull request is merged, switch to the official OpenWrt images (see below); this repository is only meant to bridge the time until then.
