@@ -46,7 +46,7 @@ ipTIME BE5100plus(MediaTek MT7987A, 512 MiB RAM, 128 MiB SPI-NAND, MT7992 Wi-Fi 
 
 ## 설치
 
-제조사 U-Boot의 복구 페이지로 설치합니다. 제조사 펌웨어에서도, OpenWrt에서도 작동합니다. 제조사 웹 UI로 설치하는 것은 지원하지 않습니다.
+제조사 U-Boot의 복구 페이지로 설치합니다. 제조사 펌웨어 상태와 OpenWrt 상태 모두 정상적으로 작동합니다. 제조사 웹 UI로 설치하는 것은 지원하지 않습니다.
 
 1. `*-squashfs-factory.bin`과 `*-squashfs-sysupgrade.bin`을 받습니다.
 2. 리셋 버튼을 누른 채로 전원을 켭니다.
@@ -93,7 +93,8 @@ sysupgrade는 제조사의 두 슬롯에 같은 이미지를 씁니다. 제조�
    ```
 4. 전원을 끄고, [ipTIME 다운로드 페이지](https://iptime.com/support/downloads)에서 받은 제조사 펌웨어로 설치 2~5단계를 따라 합니다.
 
-복구 페이지는 `rootfs_data`를 지우지 않는데, OpenWrt가 이 볼륨을 플래시 끝까지 키워 두기 때문에 3단계 없이는 제조사 이미지가 들어가지 않습니다. 그래도 실패하면 OpenWrt는 다른 슬롯에서 그대로 부팅됩니다.
+복구 페이지에서 설치하면 `rootfs_data`가 지워지지 않는데, OpenWrt가 이 볼륨을 플래시 끝까지 키워 두기 때문에 3단계 없이는 제조사 이미지가 정상적으로 플래시되지 않습니다. 
+혹시라도 실패하더라도 다른 슬롯에서 OpenWrt가 정상적으로 부팅됩니다. 
 
 ## 알려진 제한 사항
 
